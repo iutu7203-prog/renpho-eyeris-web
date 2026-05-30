@@ -2002,26 +2002,92 @@
   }
 </style>
 
-<!-- Facebook Messenger Customer Chat Plugin -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({ appId: '1501989301412733', xfbml: true, version: 'v22.0' });
-  };
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-<div class="fb-customerchat"
-  page_id="1133021153451708"
-  theme_color="#6366f1"
-  logged_in_greeting="Xin chào! Tôi có thể tư vấn gì cho Anh/Chị về máy massage mắt RENPHO Eyeris 3 không ạ?"
-  logged_out_greeting="Xin chào! Tôi có thể tư vấn gì cho Anh/Chị về máy massage mắt RENPHO Eyeris 3 không ạ?">
+<!-- Nút chat Messenger tùy chỉnh -->
+<style>
+  #messenger-fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  #messenger-tooltip {
+    background: #1e293b;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    cursor: pointer;
+    animation: fadeInUp 0.4s ease;
+  }
+  #messenger-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0084ff, #0066cc);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0,132,255,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+  }
+  #messenger-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 30px rgba(0,132,255,0.7);
+  }
+  #messenger-btn svg {
+    width: 32px;
+    height: 32px;
+  }
+  .messenger-ping {
+    position: absolute;
+    top: 3px; right: 3px;
+    width: 13px; height: 13px;
+    background: #22c55e;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    animation: ping 1.8s ease-in-out infinite;
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes ping {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.35); }
+  }
+  @media (max-width: 600px) {
+    #messenger-fab { right: 14px; bottom: 14px; }
+    #messenger-btn { width: 54px; height: 54px; }
+    #messenger-btn svg { width: 28px; height: 28px; }
+  }
+</style>
+
+<div id="messenger-fab">
+  <div id="messenger-tooltip">💬 Tư vấn ngay</div>
+  <a id="messenger-btn" href="https://m.me/1133021153451708" target="_blank" rel="noopener" title="Chat tư vấn qua Messenger">
+    <span class="messenger-ping"></span>
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.908 1.452 5.503 3.726 7.201V22l3.405-1.869c.91.252 1.872.387 2.869.387 5.523 0 10-4.145 10-9.243C22 6.145 17.523 2 12 2zm1.008 12.445l-2.55-2.72-4.976 2.72 5.474-5.808 2.613 2.72 4.913-2.72-5.474 5.808z"/>
+    </svg>
+  </a>
 </div>
+
+<script>
+  setTimeout(function() {
+    var t = document.getElementById('messenger-tooltip');
+    if (t) t.style.display = 'none';
+  }, 5000);
+</script>
 
 </body>
 </html>
