@@ -1,0 +1,2028 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RENPHO Eyeris 3 — Máy Massage Mắt #1 Mỹ | Chính Hãng tại Việt Nam</title>
+  <meta name="description" content="RENPHO Eyeris 3 — Công nghệ massage mắt #1 Amazon Mỹ. Voice control, hot & cold therapy, Bluetooth. Bảo hành 24 tháng. Giao hàng toàn quốc. Hoàn tiền 30 ngày.">
+  <meta property="og:title" content="RENPHO Eyeris 3 — Máy Massage Mắt #1 Mỹ | Chính Hãng">
+  <meta property="og:description" content="8 tiếng nhìn màn hình mỗi ngày. Đôi mắt của bạn xứng đáng được chăm sóc hơn thế. Voice Control + Hot & Cold Therapy.">
+  <meta property="og:type" content="website">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:   '#0F172A',
+            accent:    '#0891B2',
+            rose:      '#E11D48',
+            rosesoft:  '#FFF1F5',
+            rosegold:  '#C2975A',
+            cta:       '#0891B2',
+            ctahover:  '#0369A1',
+            surface:   '#F0F9FF',
+            warm:      '#FFF7ED',
+          },
+          fontFamily: {
+            sans: ['Be Vietnam Pro', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { font-family: 'Be Vietnam Pro', sans-serif; }
+    html { scroll-behavior: smooth; }
+    /* offset for sticky announcement bar (32px) + navbar (64px) */
+    section[id], div[id="hero"] { scroll-margin-top: 100px; }
+
+    /* Announcement bar */
+    .announce-bar { background: linear-gradient(90deg, #0F172A 0%, #1E3A5F 50%, #0F172A 100%); }
+
+    /* Product Switcher */
+    .switcher-btn { transition: all 0.25s ease; }
+    .switcher-btn.active-black {
+      background: #0F172A; color: white; box-shadow: 0 4px 14px rgba(15,23,42,0.35);
+    }
+    .switcher-btn.active-rose {
+      background: linear-gradient(135deg, #C2975A, #E11D48); color: white; box-shadow: 0 4px 14px rgba(225,29,72,0.35);
+    }
+
+    /* Product panel transitions */
+    .product-panel { display: none; animation: fadeUp 0.4s ease; }
+    .product-panel.active { display: block; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Gradient text */
+    .text-gradient-rose { background: linear-gradient(135deg, #C2975A, #E11D48); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .text-gradient-tech { background: linear-gradient(135deg, #0891B2, #0F172A); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+    /* Value stack box */
+    .value-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px dashed #e5e7eb; }
+    .value-row:last-child { border-bottom: none; }
+
+    /* Star */
+    .stars { color: #FBBF24; letter-spacing: 2px; }
+
+    /* Sticky CTA mobile */
+    .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 99; display: none; }
+    @media (max-width: 768px) { .sticky-cta { display: block; } }
+
+    /* Accordion */
+    .acc-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .acc-body.open { max-height: 600px; }
+
+    /* Countdown */
+    .count-unit { display: flex; flex-direction: column; align-items: center; }
+    .count-num { font-size: 2rem; font-weight: 800; line-height: 1; }
+    .count-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+
+    /* Badge pulse */
+    @keyframes pulse-ring {
+      0% { transform: scale(0.8); opacity: 1; }
+      100% { transform: scale(1.6); opacity: 0; }
+    }
+    .pulse-dot::before {
+      content: ''; position: absolute; inset: 0; border-radius: 50%;
+      background: #22c55e; animation: pulse-ring 1.5s infinite;
+    }
+
+    /* Comparison table highlight */
+    .col-highlight { background: #EFF6FF; }
+
+    /* Hover card lift */
+    .lift { transition: transform 0.2s, box-shadow 0.2s; }
+    .lift:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.12); }
+
+    /* Rose gradient bg */
+    .rose-gradient-bg { background: linear-gradient(135deg, #FFF1F5 0%, #FEF3C7 100%); }
+    .tech-gradient-bg { background: linear-gradient(135deg, #EFF6FF 0%, #E0F2FE 100%); }
+
+    /* Scroll progress */
+    #progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg,#0891B2,#C2975A); z-index: 200; transition: width 0.1s; }
+
+    /* Urgency section */
+    .urgency-bar { background: linear-gradient(135deg, #7C0000 0%, #DC2626 50%, #7C0000 100%); background-size: 200% 100%; animation: barShift 6s linear infinite; }
+    @keyframes barShift { 0%,100%{background-position:0% 0%} 50%{background-position:100% 0%} }
+
+    /* Shimmer text */
+    @keyframes shimmer { 0%{background-position:-200% center} 100%{background-position:200% center} }
+    .shimmer-text { background: linear-gradient(90deg,#FFF 30%,#FEF08A 50%,#FFF 70%); background-size:200% auto; -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; animation:shimmer 2.5s linear infinite; }
+
+    /* Countdown boxes */
+    .count-box { background:rgba(255,255,255,0.15); backdrop-filter:blur(4px); border-radius:14px; padding:10px 18px; text-align:center; border:1px solid rgba(255,255,255,0.25); min-width:68px; }
+    .count-num { font-size:2.2rem; font-weight:800; line-height:1; color:#fff; }
+    .count-lbl { font-size:0.6rem; text-transform:uppercase; letter-spacing:2px; color:rgba(255,255,255,0.6); margin-top:3px; }
+
+    /* Flash-border animation on price boxes */
+    @keyframes flashBorder { 0%,100%{border-color:#EF4444} 50%{border-color:#FBBF24} }
+    .flash-border { animation:flashBorder 2s ease-in-out infinite; }
+
+    /* Toast notification */
+    .purchase-toast { position:fixed; bottom:90px; left:16px; z-index:300; max-width:270px; transform:translateX(-130%); transition:transform 0.5s cubic-bezier(.34,1.56,.64,1); }
+    .purchase-toast.show { transform:translateX(0); }
+    @media(min-width:769px){ .purchase-toast{bottom:24px;} }
+  </style>
+</head>
+<body class="bg-white text-gray-900 pb-20 md:pb-0">
+
+<!-- Progress Bar -->
+<div id="progress-bar" style="width:0%"></div>
+
+<!-- ═══════════════════════════════════════════════
+  ANNOUNCEMENT BAR
+════════════════════════════════════════════════ -->
+<div class="announce-bar text-white text-center text-sm py-2 px-4 sticky top-0 z-50">
+  <span class="font-bold text-yellow-300 animate-pulse">🔥 FLASH SALE KẾT THÚC SAU:</span>
+  &nbsp;
+  <span class="font-mono font-extrabold text-yellow-200 bg-black/30 px-2 py-0.5 rounded countdown-display">--:--:--</span>
+  &nbsp;·&nbsp; Từ <span class="font-extrabold text-white">2.790.000đ</span>
+  &nbsp;·&nbsp; <span class="font-semibold text-yellow-300">FREESHIP</span>
+  &nbsp;·&nbsp; Còn <span id="stock-counter" class="font-bold text-yellow-300">23</span> máy
+</div>
+
+<!-- ═══════════════════════════════════════════════
+  NAVBAR
+════════════════════════════════════════════════ -->
+<nav class="bg-white border-b border-gray-200 shadow-sm sticky top-8 z-40">
+  <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" class="flex items-center gap-2">
+      <div class="w-9 h-9 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-base">R</div>
+      <span class="font-bold text-lg text-gray-900 hidden sm:block">RENPHO VN</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+      <a href="#features"    onclick="navTo('features');    return false;" class="hover:text-accent transition">Tính năng</a>
+      <a href="#value-stack" onclick="navTo('value-stack'); return false;" class="hover:text-accent transition">Combo đặc biệt</a>
+      <a href="#comparison"  onclick="navTo('comparison');  return false;" class="hover:text-accent transition">So sánh</a>
+      <a href="#reviews"     onclick="navTo('reviews');     return false;" class="hover:text-accent transition">Đánh giá</a>
+      <a href="#faq"         onclick="navTo('faq');         return false;" class="hover:text-accent transition">FAQ</a>
+    </div>
+    <a href="#order" onclick="goToOrder(); return false;"
+       class="bg-accent hover:bg-ctahover text-white font-semibold px-5 py-2 rounded-lg text-sm transition shadow-md">
+      Đặt hàng ngay
+    </a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════
+  HERO — PRODUCT SWITCHER
+════════════════════════════════════════════════ -->
+<section class="pt-10 pb-6 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <!-- Product Switcher Tabs -->
+    <div class="flex justify-center mb-8">
+      <div class="bg-gray-200 rounded-2xl p-1 flex gap-1 shadow-inner">
+        <button id="btn-black" onclick="switchProduct('black')"
+                class="switcher-btn active-black px-6 py-3 rounded-xl font-semibold text-sm">
+          Eyeris 3 Đen&nbsp; — Tự mua cho mình
+        </button>
+        <button id="btn-rose" onclick="switchProduct('rose')"
+                class="switcher-btn px-6 py-3 rounded-xl font-semibold text-sm text-gray-600">
+          Eyeris 3 Rosé&nbsp; — Tặng người thân
+        </button>
+      </div>
+    </div>
+
+    <!-- ────── PANEL: EYERIS 3 BLACK ────── -->
+    <div id="panel-black" class="product-panel active">
+      <div class="tech-gradient-bg rounded-3xl p-6 md:p-10">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+
+          <!-- Left: Product Image Gallery -->
+          <div class="relative">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden aspect-square">
+              <img id="black-main-img"
+                   src="https://renpho.com/cdn/shop/files/G010V-BK_01.png?v=1767694781&width=800"
+                   alt="RENPHO Eyeris 3 Eye Massager - Màu Đen"
+                   class="w-full h-full object-contain p-4 transition-opacity duration-300">
+            </div>
+            <!-- Thumbnail Strip -->
+            <div class="flex gap-2 mt-3 justify-center">
+              <button onclick="switchBlackImg(1)" id="black-thumb-1"
+                      class="w-16 h-16 rounded-xl overflow-hidden border-2 border-accent shadow transition-transform hover:scale-105 focus:outline-none">
+                <img src="https://renpho.com/cdn/shop/files/G010V-BK_01.png?v=1767694781&width=200"
+                     alt="Eyeris 3 Đen - Góc 1" class="w-full h-full object-contain p-1">
+              </button>
+              <button onclick="switchBlackImg(2)" id="black-thumb-2"
+                      class="w-16 h-16 rounded-xl overflow-hidden border-2 border-transparent shadow transition-transform hover:scale-105 focus:outline-none">
+                <img src="https://renpho.com/cdn/shop/files/G010V-BK_02.png?v=1767694781&width=200"
+                     alt="Eyeris 3 Đen - Góc 2" class="w-full h-full object-contain p-1">
+              </button>
+              <button onclick="switchBlackImg(3)" id="black-thumb-3"
+                      class="w-16 h-16 rounded-xl overflow-hidden border-2 border-transparent shadow transition-transform hover:scale-105 focus:outline-none">
+                <img src="https://renpho.com/cdn/shop/files/G010V-BK_03.png?v=1767694781&width=200"
+                     alt="Eyeris 3 Đen - Góc 3" class="w-full h-full object-contain p-1">
+              </button>
+            </div>
+            <!-- Badge: Best Seller -->
+            <div class="absolute -top-3 -right-3 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+              #1 Amazon Mỹ
+            </div>
+            <!-- Badge: Limited Stock -->
+            <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-orange-500 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg whitespace-nowrap flex items-center gap-2">
+              <span class="relative w-2 h-2">
+                <span class="pulse-dot absolute inset-0 rounded-full bg-green-400"></span>
+                <span class="relative w-2 h-2 rounded-full bg-green-400 block"></span>
+              </span>
+              Còn 23 máy trong kho
+            </div>
+          </div>
+
+          <!-- Right: Product Info -->
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="stars text-sm">★★★★★</span>
+              <span class="text-sm text-gray-600 font-medium">4.2/5 · 50.000+ đánh giá tại Mỹ</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 leading-tight">
+              RENPHO Eyeris 3<br>
+              <span class="text-gradient-tech">Eye Massager</span>
+            </h1>
+            <p class="text-gray-500 text-sm mb-4 font-medium">Màu Đen · Hàng US Chính Hãng · Nguyên Hộp</p>
+
+            <p class="text-gray-700 leading-relaxed mb-6 text-base">
+              8 tiếng nhìn màn hình mỗi ngày — đôi mắt của bạn xứng đáng được thư giãn hoàn toàn trong
+              <strong>15 phút</strong>. Voice control, hot &amp; cold therapy, Bluetooth.
+              Được 50.000+ người Mỹ tin dùng mỗi ngày.
+            </p>
+
+            <!-- Price Box -->
+            <div class="bg-white rounded-2xl p-5 shadow-md mb-6 border-2 border-red-400 flash-border">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="bg-red-600 text-white text-sm font-extrabold px-4 py-1.5 rounded-full animate-pulse" style="box-shadow:0 0 10px rgba(220,38,38,0.55)">🔥 FLASH SALE</span>
+                <span class="text-red-600 text-xs font-semibold">Kết thúc hôm nay</span>
+              </div>
+              <div class="flex items-baseline gap-3 mb-1">
+                <span class="text-4xl font-extrabold text-accent">2.790.000đ</span>
+                <span class="text-xl text-gray-400 line-through">3.690.000đ</span>
+                <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded-full">-24%</span>
+              </div>
+              <p class="text-xs text-green-600 font-semibold">✓ Tiết kiệm 900.000đ · Bao gồm đầy đủ <strong>4 bonus</strong></p>
+              <div class="flex items-center gap-1 mt-2 text-xs text-gray-500">
+                ⏱️ Giá này kết thúc sau: <span class="countdown-display font-mono font-bold text-red-600">--:--:--</span>
+              </div>
+            </div>
+
+            <!-- Key USPs -->
+            <ul class="space-y-2 mb-6 text-sm">
+              <li class="flex items-center gap-2 text-gray-700">
+                <span class="text-accent font-bold">✓</span>
+                <strong>Voice Control</strong> — Nói "Hi Eyeris", điều khiển không cần tay
+              </li>
+              <li class="flex items-center gap-2 text-gray-700">
+                <span class="text-accent font-bold">✓</span>
+                <strong>Hot + Cold Dual Therapy</strong> — 40–45°C + túi gel lạnh tháo rời
+              </li>
+              <li class="flex items-center gap-2 text-gray-700">
+                <span class="text-accent font-bold">✓</span>
+                <strong>10 huyệt đạo</strong> quanh mắt, motor êm &lt;43dB
+              </li>
+              <li class="flex items-center gap-2 text-gray-700">
+                <span class="text-accent font-bold">✓</span>
+                <strong>Bảo hành 24 tháng</strong> (50 đơn đầu) · Hoàn tiền 30 ngày
+              </li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#order" onclick="goToOrder('black'); return false;"
+               class="block w-full bg-accent hover:bg-ctahover text-white font-bold py-4 px-6 rounded-xl text-center text-lg transition shadow-lg">
+              Đặt Hàng Ngay →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ────── PANEL: EYERIS 3 ROSÉ ────── -->
+    <div id="panel-rose" class="product-panel">
+      <div class="rose-gradient-bg rounded-3xl p-6 md:p-10">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+
+          <!-- Left: Product Image Gallery (Rosé) -->
+          <div class="relative">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden aspect-square">
+              <img id="rose-main-img"
+                   src="https://renpho.com/cdn/shop/files/G010V-RS_01.png?v=1767694781&width=800"
+                   alt="RENPHO Eyeris 3 Rosé Eye Massager - Limited Edition"
+                   class="w-full h-full object-contain p-4 transition-opacity duration-300">
+            </div>
+            <!-- Thumbnail Strip -->
+            <div class="flex gap-2 mt-3 justify-center">
+              <button onclick="switchRoseImg(1)" id="rose-thumb-1"
+                      class="w-16 h-16 rounded-xl overflow-hidden border-2 border-rose-500 shadow transition-transform hover:scale-105 focus:outline-none">
+                <img src="https://renpho.com/cdn/shop/files/G010V-RS_01.png?v=1767694781&width=200"
+                     alt="Eyeris 3 Rosé - Góc 1" class="w-full h-full object-contain p-1">
+              </button>
+              <button onclick="switchRoseImg(2)" id="rose-thumb-2"
+                      class="w-16 h-16 rounded-xl overflow-hidden border-2 border-transparent shadow transition-transform hover:scale-105 focus:outline-none">
+                <img src="https://renpho.com/cdn/shop/files/G010V-RS_02.png?v=1767694781&width=200"
+                     alt="Eyeris 3 Rosé - Góc 2" class="w-full h-full object-contain p-1">
+              </button>
+              <button onclick="switchRoseImg(3)" id="rose-thumb-3"
+                      class="w-16 h-16 rounded-xl overflow-hidden border-2 border-transparent shadow transition-transform hover:scale-105 focus:outline-none">
+                <img src="https://renpho.com/cdn/shop/files/G010V-RS_03.png?v=1767694781&width=200"
+                     alt="Eyeris 3 Rosé - Góc 3" class="w-full h-full object-contain p-1">
+              </button>
+            </div>
+            <div class="absolute -top-3 -right-3 bg-rose-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+              Limited Edition
+            </div>
+            <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-rosegold text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg whitespace-nowrap flex items-center gap-2">
+              <span class="relative w-2 h-2">
+                <span class="pulse-dot absolute inset-0 rounded-full bg-green-400"></span>
+                <span class="relative w-2 h-2 rounded-full bg-green-400 block"></span>
+              </span>
+              Chỉ còn 12 máy · Không nhập thêm
+            </div>
+          </div>
+
+          <!-- Right: Rosé Product Info -->
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="stars text-sm">★★★★★</span>
+              <span class="text-sm text-gray-600 font-medium">Best Seller RENPHO · Limited Edition</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 leading-tight">
+              RENPHO Eyeris 3<br>
+              <span class="text-gradient-rose">Rosé Edition</span>
+            </h1>
+            <p class="text-gray-500 text-sm mb-4 font-medium">Blush Gold &amp; Sunset · Hàng US · Limited Edition</p>
+
+            <p class="text-gray-700 leading-relaxed mb-6 text-base">
+              Cô ấy chăm sóc mọi người — ai chăm sóc đôi mắt của cô ấy?
+              Không phải hoa, không phải nước hoa —
+              <strong>một món quà cô ấy dùng mỗi ngày, nhớ đến bạn mỗi ngày.</strong>
+            </p>
+
+            <!-- Price Box Rosé -->
+            <div class="bg-white rounded-2xl p-5 shadow-md mb-6 border-2 border-rose-400 flash-border">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="bg-red-600 text-white text-sm font-extrabold px-4 py-1.5 rounded-full animate-pulse" style="box-shadow:0 0 10px rgba(220,38,38,0.55)">🔥 FLASH SALE</span>
+                <span class="text-red-600 text-xs font-semibold">Kết thúc hôm nay</span>
+              </div>
+              <div class="flex items-baseline gap-3 mb-1">
+                <span class="text-4xl font-extrabold text-rose-600">2.990.000đ</span>
+                <span class="text-xl text-gray-400 line-through">4.490.000đ</span>
+                <span class="bg-rose-100 text-rose-600 text-xs font-bold px-2 py-1 rounded-full">-33%</span>
+              </div>
+              <p class="text-xs text-green-600 font-semibold">✓ Tiết kiệm 1.500.000đ · Bao gồm <strong>Hộp quà premium + Thiệp + 3 bonus</strong></p>
+              <div class="flex items-center gap-1 mt-2 text-xs text-gray-500">
+                ⏱️ Giá này kết thúc sau: <span class="countdown-display font-mono font-bold text-red-600">--:--:--</span>
+              </div>
+            </div>
+
+            <!-- Key USPs Rosé -->
+            <ul class="space-y-2 mb-6 text-sm">
+              <li class="flex items-center gap-2 text-gray-700">
+                <span class="text-rose-600 font-bold">✓</span>
+                <strong>Màu Blush Gold độc quyền</strong> — Không có ở bất kỳ cửa hàng nào tại VN
+              </li>
+              <li class="flex items-center gap-2 text-gray-700">
+                <span class="text-rose-600 font-bold">✓</span>
+                <strong>Nhiệt đến 48°C</strong> — Cao hơn bản tiêu chuẩn, liệu trình sâu hơn
+              </li>
+              <li class="flex items-start gap-2 text-gray-700">
+                <span class="text-rose-600 font-bold mt-0.5">✓</span>
+                <span><strong>Bộ Mặt Nạ Gel Nóng Lạnh</strong> — Gel pack đa năng · dùng nóng 40°C hoặc lạnh · tái sử dụng nhiều lần</span>
+              </li>
+              <li class="flex items-center gap-2 text-gray-700">
+                <span class="text-rose-600 font-bold">✓</span>
+                <strong>Bảo hành 24 tháng</strong> (30 đơn đầu) · Hoàn tiền 30 ngày
+              </li>
+            </ul>
+
+            <!-- CTA Button Rosé -->
+            <a href="#order" onclick="goToOrder('rose'); return false;"
+               class="block w-full font-bold py-4 px-6 rounded-xl text-center text-lg transition shadow-lg text-white"
+               style="background: linear-gradient(135deg, #C2975A, #E11D48)">
+              Đặt Hàng Ngay →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+  TRUST BADGES
+════════════════════════════════════════════════ -->
+<section class="bg-white border-y border-gray-100 py-6">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 bg-blue-50 rounded-xl flex items-center justify-center text-accent text-xl flex-shrink-0">🛡️</div>
+        <div>
+          <div class="font-bold text-gray-900 text-sm">Bảo hành 24 tháng</div>
+          <div class="text-xs text-gray-500">Đổi máy mới nếu lỗi</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 bg-green-50 rounded-xl flex items-center justify-center text-green-600 text-xl flex-shrink-0">↩️</div>
+        <div>
+          <div class="font-bold text-gray-900 text-sm">Hoàn tiền 30 ngày</div>
+          <div class="text-xs text-gray-500">Không hài lòng → hoàn 100%</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 text-xl flex-shrink-0">🇺🇸</div>
+        <div>
+          <div class="font-bold text-gray-900 text-sm">Hàng Mỹ chính hãng</div>
+          <div class="text-xs text-gray-500">Tem kiểm, nguyên hộp</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 bg-orange-50 rounded-xl flex items-center justify-center text-orange-600 text-xl flex-shrink-0">🚚</div>
+        <div>
+          <div class="font-bold text-gray-900 text-sm">Giao hàng 2–4 ngày</div>
+          <div class="text-xs text-gray-500">Freeship từ 500K</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+  PAIN POINT SECTION
+════════════════════════════════════════════════ -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Bạn có đang gặp điều này?</p>
+    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8">
+      Đôi mắt của bạn đang "kêu cứu"
+    </h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-red-50">
+        <div class="text-4xl mb-3">😫</div>
+        <h3 class="font-bold text-gray-900 mb-2">Mỏi mắt cuối ngày</h3>
+        <p class="text-gray-600 text-sm">Nhìn màn hình 8h+ liên tục, mắt nặng và mờ dần vào chiều tối</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-red-50">
+        <div class="text-4xl mb-3">🤕</div>
+        <h3 class="font-bold text-gray-900 mb-2">Đau đầu, thái dương căng</h3>
+        <p class="text-gray-600 text-sm">Migraine và nhức đầu sau giờ làm xuất hiện ngày càng thường xuyên</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-red-50">
+        <div class="text-4xl mb-3">🌑</div>
+        <h3 class="font-bold text-gray-900 mb-2">Thâm quầng, sưng mí</h3>
+        <p class="text-gray-600 text-sm">Thiếu ngủ và căng thẳng để lại dấu vết rõ ràng dưới mắt</p>
+      </div>
+    </div>
+    <p class="text-gray-500 mt-8 text-lg">
+      Đây không phải do bạn lười chăm sóc sức khỏe. <br>
+      <strong class="text-gray-900">Đây là hệ quả tất yếu của lối sống hiện đại.</strong><br>
+      Và RENPHO Eyeris 3 được thiết kế để giải quyết đúng vấn đề này.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+  FEATURES SECTION
+════════════════════════════════════════════════ -->
+<section id="features" class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Công Nghệ</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        Tại sao Eyeris 3 khác biệt hoàn toàn?
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Không phải máy massage mắt thông thường. Eyeris 3 là thiết bị y tế thông minh kết hợp 5 công nghệ trong một.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Feature 1 -->
+      <div class="lift bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 border border-blue-100">
+        <div class="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-white text-2xl mb-4">🎙️</div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Voice Control 18 Lệnh</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Nói <strong>"Hi Eyeris"</strong> và điều chỉnh mọi thứ bằng giọng nói —
+          không cần chạm tay khi đang thư giãn. Tính năng <strong>độc quyền</strong>
+          không có ở bất kỳ đối thủ nào tại Việt Nam.
+        </p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="lift bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-6 border border-orange-100">
+        <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center text-white text-2xl mb-4">🌡️</div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Hot &amp; Cold Dual Therapy</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Nhiệt 40–45°C giảm mỏi mắt và tăng tuần hoàn.
+          Túi gel tháo rời làm lạnh 35–60 phút giảm thâm quầng và sưng mí.
+          <strong>Duy nhất</strong> trong phân khúc 3–4 triệu tại VN.
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="lift bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl p-6 border border-purple-100">
+        <div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center text-white text-2xl mb-4">💆</div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">10 Huyệt Đạo Acupressure</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          3 chế độ nén + rung tác động chính xác vào 10 huyệt đạo quanh mắt và thái dương —
+          như được bấm huyệt bởi chuyên gia.
+        </p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="lift bg-gradient-to-br from-green-50 to-teal-50 rounded-2xl p-6 border border-green-100">
+        <div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center text-white text-2xl mb-4">🎵</div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Bluetooth + Nhạc Tích Hợp</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Phát nhạc từ điện thoại qua Bluetooth hoặc chọn nhạc thiền tích hợp sẵn.
+          Timer 15–20 phút, auto-off, nhớ cài đặt lần cuối.
+        </p>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="lift bg-gradient-to-br from-gray-50 to-slate-100 rounded-2xl p-6 border border-gray-200">
+        <div class="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center text-white text-2xl mb-4">🔇</div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">Motor Êm &lt;43dB</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Motor thế hệ mới siêu êm — dùng giờ nghỉ trưa, trên máy bay, hay trước khi ngủ
+          mà không làm phiền ai xung quanh.
+        </p>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="lift bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-6 border border-yellow-100">
+        <div class="w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center text-white text-2xl mb-4">✅</div>
+        <h3 class="font-bold text-gray-900 text-lg mb-2">FSA/HSA Certified</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Được FDA Mỹ công nhận là thiết bị chăm sóc sức khỏe hợp lệ.
+          Chứng nhận đảm bảo chất lượng, an toàn và hiệu quả thực sự.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+  VALUE STACK / COMBO ĐẶC BIỆT
+════════════════════════════════════════════════ -->
+<section id="value-stack" class="py-16 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Combo Đặc Biệt</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        Bạn nhận được gì khi đặt hàng hôm nay?
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Stack: Eyeris 3 Black -->
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden border border-blue-100">
+        <div class="bg-primary text-white px-6 py-4">
+          <h3 class="font-extrabold text-xl">Eyeris 3 Đen — Complete Wellness Kit</h3>
+          <p class="text-blue-200 text-sm mt-1">Dành cho người tự mua chăm sóc bản thân</p>
+        </div>
+        <div class="p-6">
+          <div class="space-y-0 mb-6">
+            <div class="value-row">
+              <div>
+                <span class="font-semibold text-gray-900">✅ Máy RENPHO Eyeris 3 (chính hãng Mỹ)</span>
+                <p class="text-xs text-gray-500 mt-0.5">Nguyên hộp · tem kiểm · USB-C · gel pack</p>
+              </div>
+              <span class="text-gray-400 line-through text-sm whitespace-nowrap ml-4">5.200K</span>
+            </div>
+            <div class="value-row">
+              <div>
+                <span class="font-semibold text-gray-900">🎁 Bộ Chăm Sóc Mắt 21 Ngày</span>
+                <p class="text-xs text-gray-500 mt-0.5">PDF + Video tiếng Việt + Guide voice control VN</p>
+              </div>
+              <span class="text-gray-400 line-through text-sm whitespace-nowrap ml-4">390K</span>
+            </div>
+            <div class="value-row">
+              <div>
+                <span class="font-semibold text-gray-900">🎁 Guide Skincare × Eye Massage</span>
+                <p class="text-xs text-gray-500 mt-0.5">Protocol kết hợp dưỡng da + massage tối ưu</p>
+              </div>
+              <span class="text-gray-400 line-through text-sm whitespace-nowrap ml-4">290K</span>
+            </div>
+            <div class="value-row">
+              <div>
+                <span class="font-semibold text-gray-900">🎁 Voucher Giảm 10% Đơn Tiếp Theo</span>
+                <p class="text-xs text-gray-500 mt-0.5">Áp dụng trong 15 ngày · không giới hạn sản phẩm</p>
+              </div>
+              <span class="text-gray-400 line-through text-sm whitespace-nowrap ml-4">290K</span>
+            </div>
+            <div class="value-row bg-yellow-50 -mx-6 px-6 rounded-lg">
+              <div>
+                <span class="font-bold text-gray-900">⚡ Bảo Hành Elite 24 Tháng</span>
+                <p class="text-xs text-orange-600 font-medium mt-0.5">Chỉ 50 đơn đầu · Còn 27 suất</p>
+              </div>
+              <span class="text-gray-400 line-through text-sm whitespace-nowrap ml-4">690K</span>
+            </div>
+          </div>
+
+          <!-- Price Calculation -->
+          <div class="bg-blue-50 rounded-2xl p-4 text-center border-2 border-red-300">
+            <p class="text-gray-500 text-sm mb-1">Tổng giá trị thực</p>
+            <p class="text-2xl font-bold text-gray-400 line-through mb-2">6.860.000đ</p>
+            <div class="flex items-center justify-center gap-2 mb-2">
+              <span class="bg-red-600 text-white text-sm font-extrabold px-4 py-1.5 rounded-full animate-pulse shadow-lg" style="box-shadow:0 0 12px rgba(220,38,38,0.6)">🔥 FLASH SALE — HÔM NAY</span>
+            </div>
+            <p class="text-sm text-gray-400 line-through mb-0.5">Giá thường: 3.690.000đ</p>
+            <p class="text-4xl font-extrabold text-accent">2.790.000đ</p>
+            <p class="text-green-600 font-bold text-sm mt-2">Tiết kiệm 4.070.000đ (59% OFF)</p>
+          </div>
+
+          <a href="#order" onclick="goToOrder('black'); return false;"
+             class="block mt-4 bg-accent hover:bg-ctahover text-white font-bold py-4 rounded-xl text-center transition text-lg shadow-md">
+            Đặt Ngay — Eyeris 3 Đen · 2.790.000đ
+          </a>
+        </div>
+      </div>
+
+      <!-- Stack: Eyeris 3 Rosé -->
+      <div class="bg-white rounded-3xl shadow-lg overflow-hidden border border-pink-100">
+        <div class="text-white px-6 py-4" style="background: linear-gradient(135deg, #1C1917, #7C2D12)">
+          <h3 class="font-extrabold text-xl">Eyeris 3 Rosé — The Gift of Care</h3>
+          <p class="text-orange-200 text-sm mt-1">Limited Edition · Dành để tặng người thân</p>
+        </div>
+        <div class="p-6">
+          <div class="space-y-0 mb-6">
+            <div class="value-row">
+              <div>
+                <span class="font-semibold text-gray-900">✅ Máy Eyeris 3 Rosé (Limited Edition)</span>
+                <p class="text-xs text-gray-500 mt-0.5">Màu Blush Gold · nhiệt đến 48°C · nguyên hộp</p>
+              </div>
+              <span class="text-gray-400 line-through text-sm whitespace-nowrap ml-4">6.000K</span>
+            </div>
+            <div class="value-row">
+              <div>
+                <span class="font-semibold text-gray-900">🎁 Bộ Mặt Nạ Gel Nóng Lạnh</span>
+                <p class="text-xs text-gray-500 mt-0.5">Gel pack đa năng · dùng nóng 40°C hoặc lạnh · tái sử dụng nhiều lần</p>
+              </div>
+              <span class="text-gray-400 line-through text-sm whitespace-nowrap ml-4">490K</span>
+            </div>
+            <div class="value-row">
+              <div>
+                <span class="font-semibold text-gray-900">🎁 Bộ Chăm Sóc Mắt 21 Ngày</span>
+                <p class="text-xs text-gray-500 mt-0.5">PDF + Video tiếng Việt + Guide voice control VN</p>
+              </div>
+              <span class="text-gray-400 line-through text-sm whitespace-nowrap ml-4">390K</span>
+            </div>
+            <div class="value-row">
+              <div>
+                <span class="font-semibold text-gray-900">🎁 Guide Skincare × Eye Massage</span>
+                <p class="text-xs text-gray-500 mt-0.5">Protocol kết hợp dưỡng da + massage tối ưu</p>
+              </div>
+              <span class="text-gray-400 line-through text-sm whitespace-nowrap ml-4">290K</span>
+            </div>
+            <div class="value-row">
+              <div>
+                <span class="font-semibold text-gray-900">🎁 Voucher Giảm 10% Đơn Tiếp Theo</span>
+                <p class="text-xs text-gray-500 mt-0.5">Áp dụng trong 15 ngày · không giới hạn sản phẩm</p>
+              </div>
+              <span class="text-gray-400 line-through text-sm whitespace-nowrap ml-4">299K</span>
+            </div>
+            <div class="value-row bg-yellow-50 -mx-6 px-6 rounded-lg">
+              <div>
+                <span class="font-bold text-gray-900">⚡ Bảo Hành Elite 24 Tháng</span>
+                <p class="text-xs text-orange-600 font-medium mt-0.5">Chỉ 30 đơn đầu · Còn 18 suất</p>
+              </div>
+              <span class="text-gray-400 line-through text-sm whitespace-nowrap ml-4">690K</span>
+            </div>
+          </div>
+
+          <!-- Price Calculation Rosé -->
+          <div class="bg-pink-50 rounded-2xl p-4 text-center border-2 border-rose-300">
+            <p class="text-gray-500 text-sm mb-1">Tổng giá trị thực</p>
+            <p class="text-2xl font-bold text-gray-400 line-through mb-2">8.160.000đ</p>
+            <div class="flex items-center justify-center gap-2 mb-2">
+              <span class="bg-red-600 text-white text-sm font-extrabold px-4 py-1.5 rounded-full animate-pulse shadow-lg" style="box-shadow:0 0 12px rgba(220,38,38,0.6)">🔥 FLASH SALE — HÔM NAY</span>
+            </div>
+            <p class="text-sm text-gray-400 line-through mb-0.5">Giá thường: 4.490.000đ</p>
+            <p class="text-4xl font-extrabold text-rose-600">2.990.000đ</p>
+            <p class="text-green-600 font-bold text-sm mt-2">Tiết kiệm 5.170.000đ (63% OFF)</p>
+          </div>
+
+          <a href="#order" onclick="goToOrder('rose'); return false;"
+             class="block mt-4 text-white font-bold py-4 rounded-xl text-center transition text-lg shadow-md"
+             style="background: linear-gradient(135deg, #C2975A, #E11D48)">
+            Đặt Ngay — Eyeris 3 Rosé · 2.990.000đ
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Combo Offer -->
+    <div class="mt-8 rounded-3xl overflow-hidden shadow-xl border-2 border-yellow-400"
+         style="background: linear-gradient(135deg, #0F172A 0%, #1C1917 50%, #7C2D12 100%)">
+      <div class="px-6 py-4 flex items-center gap-3 border-b border-white/10">
+        <span class="text-2xl">🔥</span>
+        <div>
+          <p class="text-yellow-300 font-extrabold text-lg tracking-wide">COMBO ĐẶC BIỆT — Mua 2 Tiết Kiệm Hơn</p>
+          <p class="text-white/60 text-sm">Eyeris 3 Đen + Eyeris 3 Rosé · Giao cùng lúc · Freeship</p>
+        </div>
+        <span class="ml-auto bg-yellow-400 text-gray-900 text-xs font-extrabold px-3 py-1.5 rounded-full whitespace-nowrap">TIẾT KIỆM 790K</span>
+      </div>
+      <div class="p-6 grid sm:grid-cols-3 gap-6 items-center">
+        <div class="sm:col-span-2 grid grid-cols-2 gap-4">
+          <div class="bg-white/10 rounded-2xl p-4 text-white">
+            <p class="text-xs text-white/60 mb-1">Eyeris 3 Đen</p>
+            <p class="font-extrabold text-xl">2.790.000đ</p>
+            <p class="text-xs text-white/50 mt-1">Complete Wellness Kit · 5 bonus</p>
+          </div>
+          <div class="bg-white/10 rounded-2xl p-4 text-white">
+            <p class="text-xs text-white/60 mb-1">Eyeris 3 Rosé</p>
+            <p class="font-extrabold text-xl text-rose-300">2.990.000đ</p>
+            <p class="text-xs text-white/50 mt-1">Gift of Care · 5 bonus + Hộp Quà</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <p class="text-white/60 text-sm line-through mb-1">Mua lẻ: 5.780.000đ</p>
+          <p class="text-yellow-300 text-4xl font-extrabold">4.990.000đ</p>
+          <p class="text-green-400 text-sm font-bold mt-1">Tiết kiệm 790.000đ (14% OFF)</p>
+          <a href="#order" onclick="goToOrder('combo'); return false;"
+             class="mt-3 block bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-extrabold py-3 rounded-xl text-sm transition shadow-lg">
+            Chọn Combo Ngay
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Guarantee callout -->
+    <div class="mt-8 bg-green-50 border border-green-200 rounded-2xl p-6 text-center">
+      <div class="text-3xl mb-3">🔒</div>
+      <h3 class="font-bold text-gray-900 text-lg mb-2">Cam Kết "Thử Nghiệm Không Rủi Ro 30 Ngày"</h3>
+      <p class="text-gray-700 max-w-2xl mx-auto text-sm leading-relaxed">
+        Nếu sau 30 ngày sử dụng anh/chị không hài lòng vì bất kỳ lý do gì —
+        hoàn tiền 100% không hỏi lý do. Không cần gửi máy về (nếu lỗi do chúng tôi).
+        Tất cả tài liệu bonus giữ lại hoàn toàn.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+  COMPARISON TABLE
+════════════════════════════════════════════════ -->
+<section id="comparison" class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">So Sánh</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        RENPHO vs Đối thủ tại Việt Nam
+      </h2>
+      <p class="text-gray-600">Cùng tầm giá — khác biệt hoàn toàn về tính năng</p>
+    </div>
+
+    <div class="overflow-x-auto rounded-2xl shadow-lg border border-gray-200">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-5 py-4 text-left font-semibold">Tính năng</th>
+            <th class="px-5 py-4 text-center font-bold bg-accent text-white">RENPHO Eyeris 3</th>
+            <th class="px-5 py-4 text-center font-semibold">Philips PPM2702</th>
+            <th class="px-5 py-4 text-center font-semibold">SKG E3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-5 py-4 font-medium text-gray-700">Giá bán (VNĐ)</td>
+            <td class="px-5 py-4 text-center font-bold text-accent col-highlight">2.790.000đ <span class="text-xs text-gray-400 line-through font-normal block">3.690.000đ</span></td>
+            <td class="px-5 py-4 text-center text-gray-600">2.990.000đ</td>
+            <td class="px-5 py-4 text-center text-gray-600">2.990.000đ</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-5 py-4 font-medium text-gray-700">Voice Control</td>
+            <td class="px-5 py-4 text-center col-highlight">
+              <span class="text-green-600 font-bold text-lg">✓</span>
+              <span class="text-xs text-gray-500 block">18 lệnh giọng nói</span>
+            </td>
+            <td class="px-5 py-4 text-center"><span class="text-red-400 font-bold text-lg">✗</span></td>
+            <td class="px-5 py-4 text-center"><span class="text-red-400 font-bold text-lg">✗</span></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-5 py-4 font-medium text-gray-700">Cold Therapy (gel lạnh)</td>
+            <td class="px-5 py-4 text-center col-highlight">
+              <span class="text-green-600 font-bold text-lg">✓</span>
+              <span class="text-xs text-gray-500 block">Túi gel tháo rời</span>
+            </td>
+            <td class="px-5 py-4 text-center"><span class="text-red-400 font-bold text-lg">✗</span></td>
+            <td class="px-5 py-4 text-center"><span class="text-red-400 font-bold text-lg">✗</span></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-5 py-4 font-medium text-gray-700">Hot Therapy</td>
+            <td class="px-5 py-4 text-center col-highlight"><span class="text-green-600 font-bold text-lg">✓</span></td>
+            <td class="px-5 py-4 text-center"><span class="text-green-600 font-bold text-lg">✓</span></td>
+            <td class="px-5 py-4 text-center"><span class="text-green-600 font-bold text-lg">✓</span></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-5 py-4 font-medium text-gray-700">Bluetooth Music</td>
+            <td class="px-5 py-4 text-center col-highlight"><span class="text-green-600 font-bold text-lg">✓</span></td>
+            <td class="px-5 py-4 text-center"><span class="text-green-600 font-bold text-lg">✓</span></td>
+            <td class="px-5 py-4 text-center"><span class="text-green-600 font-bold text-lg">✓</span></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-5 py-4 font-medium text-gray-700">Thương hiệu gốc</td>
+            <td class="px-5 py-4 text-center col-highlight">
+              <span class="font-medium text-gray-800">🇺🇸 Mỹ</span>
+            </td>
+            <td class="px-5 py-4 text-center text-gray-600">🇳🇱 Hà Lan</td>
+            <td class="px-5 py-4 text-center text-gray-600">🇨🇳 Trung Quốc</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-5 py-4 font-medium text-gray-700">Chứng nhận y tế</td>
+            <td class="px-5 py-4 text-center col-highlight">
+              <span class="text-green-600 font-bold text-sm">FSA/HSA Certified</span>
+            </td>
+            <td class="px-5 py-4 text-center"><span class="text-red-400 font-bold text-lg">✗</span></td>
+            <td class="px-5 py-4 text-center"><span class="text-red-400 font-bold text-lg">✗</span></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-5 py-4 font-medium text-gray-700">Hỗ trợ tiếng Việt</td>
+            <td class="px-5 py-4 text-center col-highlight">
+              <span class="text-green-600 font-bold text-lg">✓</span>
+              <span class="text-xs text-gray-500 block">PDF + Video + Group</span>
+            </td>
+            <td class="px-5 py-4 text-center"><span class="text-red-400 font-bold text-lg">✗</span></td>
+            <td class="px-5 py-4 text-center"><span class="text-red-400 font-bold text-lg">✗</span></td>
+          </tr>
+          <tr>
+            <td class="px-5 py-4 font-medium text-gray-700">Bảo hành</td>
+            <td class="px-5 py-4 text-center col-highlight">
+              <span class="font-bold text-green-700">24 tháng</span>
+            </td>
+            <td class="px-5 py-4 text-center text-gray-600">12 tháng</td>
+            <td class="px-5 py-4 text-center text-gray-600">12 tháng</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-center text-gray-500 text-sm mt-4">
+      Chênh lệch 700K so với Philips/SKG — nhưng có thêm Voice Control, Cold Therapy, hỗ trợ tiếng Việt và bảo hành gấp đôi.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+  REVIEWS SECTION
+════════════════════════════════════════════════ -->
+<section id="reviews" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Đánh Giá</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        Người dùng nói gì về Eyeris 3?
+      </h2>
+      <div class="flex items-center justify-center gap-3 mb-2">
+        <span class="stars text-2xl">★★★★★</span>
+        <span class="text-3xl font-extrabold text-gray-900">4.2</span>
+        <span class="text-gray-500 text-sm">/ 5 · 50.000+ đánh giá trên Amazon Mỹ</span>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-5">
+      <!-- Review 1 -->
+      <div class="lift bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <div class="stars text-sm mb-3">★★★★★</div>
+        <p class="text-gray-700 leading-relaxed mb-4 italic">
+          "Mình làm việc 9 tiếng ngày trước máy tính. Sau 2 tuần dùng Eyeris 3 mỗi tối 15 phút,
+          không còn bị đau đầu buổi chiều nữa. Voice control cực tiện, chỉ nói là máy hiểu."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white font-bold">T</div>
+          <div>
+            <p class="font-semibold text-gray-900 text-sm">Nguyễn Thanh T.</p>
+            <p class="text-xs text-gray-500">Kỹ sư IT · Hà Nội</p>
+          </div>
+          <span class="ml-auto text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium">Đã mua hàng</span>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="lift bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <div class="stars text-sm mb-3">★★★★★</div>
+        <p class="text-gray-700 leading-relaxed mb-4 italic">
+          "Mua Rosé tặng vợ ngày 8/3. Vợ mình thích lắm vì hộp quà đẹp không kém gì
+          hàng luxury thực sự. Quan trọng hơn là cô ấy dùng mỗi tối và bảo mắt đỡ mỏi hơn nhiều."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-rose-500 rounded-full flex items-center justify-center text-white font-bold">M</div>
+          <div>
+            <p class="font-semibold text-gray-900 text-sm">Trần Văn M.</p>
+            <p class="text-xs text-gray-500">Doanh nhân · TP.HCM</p>
+          </div>
+          <span class="ml-auto text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium">Đã mua hàng</span>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="lift bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <div class="stars text-sm mb-3">★★★★★</div>
+        <p class="text-gray-700 leading-relaxed mb-4 italic">
+          "Dùng gel lạnh sau khi thức khuya — sáng hôm sau mắt hết sưng hẳn. Mình hay bị thâm quầng
+          mà sau 3 tuần đã nhạt đi rõ rệt. Hướng dẫn tiếng Việt trong group giúp mình dùng đúng cách ngay từ đầu."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">L</div>
+          <div>
+            <p class="font-semibold text-gray-900 text-sm">Phạm Thị L.</p>
+            <p class="text-xs text-gray-500">Nhân viên văn phòng · Đà Nẵng</p>
+          </div>
+          <span class="ml-auto text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium">Đã mua hàng</span>
+        </div>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="lift bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <div class="stars text-sm mb-3">★★★★☆</div>
+        <p class="text-gray-700 leading-relaxed mb-4 italic">
+          "Pin hơi thua kỳ vọng so với quảng cáo, nhưng bù lại tính năng thì xịn thật.
+          Voice control hoạt động tốt dù mình nói tiếng Việt — cứ nói chậm là máy nhận.
+          Bảo hành 24 tháng cho mình yên tâm hơn nhiều."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">H</div>
+          <div>
+            <p class="font-semibold text-gray-900 text-sm">Lê Đức H.</p>
+            <p class="text-xs text-gray-500">Lập trình viên · Cần Thơ</p>
+          </div>
+          <span class="ml-auto text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full font-medium">Đã mua hàng</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Amazon review note -->
+    <div class="mt-8 text-center">
+      <div class="inline-flex items-center gap-3 bg-white border border-gray-200 rounded-2xl px-6 py-4 shadow-sm">
+        <span class="text-2xl">🇺🇸</span>
+        <div class="text-left">
+          <p class="font-semibold text-gray-900 text-sm">50.000+ đánh giá trên Amazon US</p>
+          <p class="text-xs text-gray-500">Rating: 4.2/5 · #1 Best Seller Eye Massagers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+  URGENCY SECTION
+════════════════════════════════════════════════ -->
+<section class="urgency-bar py-10 px-4">
+  <div class="max-w-2xl mx-auto text-center">
+    <p class="shimmer-text font-extrabold text-base uppercase tracking-widest mb-1">⚠️ Offer Kết Thúc Hôm Nay — Sau 23:59 Giá Trở Về Cũ</p>
+    <p class="text-white/70 text-sm mb-6">Chỉ còn <strong class="text-yellow-300" id="urgency-stock-txt">23</strong> máy trong kho · Không nhập thêm lô này</p>
+
+    <!-- Countdown boxes -->
+    <div class="flex items-center justify-center gap-3 mb-6">
+      <div class="count-box">
+        <div class="count-num urgency-h">00</div>
+        <div class="count-lbl">Giờ</div>
+      </div>
+      <div class="text-4xl font-extrabold text-yellow-300 pb-4">:</div>
+      <div class="count-box">
+        <div class="count-num urgency-m">00</div>
+        <div class="count-lbl">Phút</div>
+      </div>
+      <div class="text-4xl font-extrabold text-yellow-300 pb-4">:</div>
+      <div class="count-box">
+        <div class="count-num urgency-s">00</div>
+        <div class="count-lbl">Giây</div>
+      </div>
+    </div>
+
+    <!-- Live activity -->
+    <div class="flex flex-wrap items-center justify-center gap-4 text-sm">
+      <div class="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2">
+        <span class="relative w-2 h-2 flex-shrink-0">
+          <span class="pulse-dot absolute inset-0 rounded-full bg-green-400"></span>
+          <span class="w-2 h-2 rounded-full bg-green-400 block"></span>
+        </span>
+        <span class="text-white/90"><strong class="text-yellow-300" id="viewer-count">18</strong> người đang xem trang này</span>
+      </div>
+      <div class="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 text-white/90">
+        🛍️ <strong class="text-yellow-300">47</strong> đơn đã đặt hôm nay
+      </div>
+    </div>
+
+    <a href="#order" onclick="goToOrder(); return false;"
+       class="mt-6 inline-block bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-extrabold py-4 px-10 rounded-2xl text-lg transition shadow-2xl">
+      Đặt Hàng Ngay — Trước Khi Hết
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+  ORDER SECTION
+════════════════════════════════════════════════ -->
+<section id="order" class="py-16 bg-white">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Đặt Hàng</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        Chọn sản phẩm &amp; đặt hàng ngay
+      </h2>
+      <p class="text-gray-600">Điền thông tin bên dưới — chúng tôi sẽ liên hệ xác nhận trong 30 phút</p>
+    </div>
+
+    <!-- Order Form -->
+    <div class="bg-gray-50 rounded-3xl p-6 md:p-8 shadow-lg border border-gray-200">
+      <form id="order-form" onsubmit="submitOrder(event)">
+
+        <!-- Product Selection -->
+        <div class="mb-6">
+          <label class="block font-bold text-gray-900 mb-3">Chọn sản phẩm</label>
+          <div class="grid sm:grid-cols-3 gap-3">
+            <label class="cursor-pointer">
+              <input type="radio" name="product" value="black" class="peer sr-only" checked>
+              <div class="peer-checked:border-accent peer-checked:bg-blue-50 border-2 border-gray-200 rounded-2xl p-4 hover:border-accent transition h-full">
+                <p class="font-bold text-gray-900 text-sm">Eyeris 3 Đen</p>
+                <div class="flex items-baseline gap-1 mt-1">
+                  <p class="text-accent font-extrabold text-lg">2.790.000đ</p>
+                </div>
+                <p class="text-gray-400 line-through text-xs">3.690K</p>
+                <p class="text-xs text-gray-500 mt-1">5 bonus · Complete Kit</p>
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="product" value="rose" class="peer sr-only">
+              <div class="peer-checked:border-rose-500 peer-checked:bg-pink-50 border-2 border-gray-200 rounded-2xl p-4 hover:border-rose-400 transition h-full">
+                <div class="flex items-center gap-1 mb-1">
+                  <p class="font-bold text-gray-900 text-sm">Eyeris 3 Rosé</p>
+                  <span class="text-xs bg-rose-100 text-rose-600 px-1.5 py-0.5 rounded-full font-semibold">Ltd</span>
+                </div>
+                <div class="flex items-baseline gap-1">
+                  <p class="text-rose-600 font-extrabold text-lg">2.990.000đ</p>
+                </div>
+                <p class="text-gray-400 line-through text-xs">4.490K</p>
+                <p class="text-xs text-gray-500 mt-1">5 bonus · Gift Box</p>
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="product" value="combo" class="peer sr-only">
+              <div class="peer-checked:border-yellow-500 peer-checked:bg-yellow-50 border-2 border-gray-200 rounded-2xl p-4 hover:border-yellow-400 transition h-full relative">
+                <span class="absolute -top-2 -right-2 bg-yellow-400 text-gray-900 text-xs font-extrabold px-2 py-0.5 rounded-full">🔥 HOT</span>
+                <p class="font-bold text-gray-900 text-sm">Combo Đen + Rosé</p>
+                <div class="flex items-baseline gap-1 mt-1">
+                  <p class="text-yellow-600 font-extrabold text-lg">4.990.000đ</p>
+                </div>
+                <p class="text-gray-400 line-through text-xs">5.780K</p>
+                <p class="text-xs text-green-600 font-semibold mt-1">Tiết kiệm 790K</p>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Customer Info -->
+        <div class="grid sm:grid-cols-2 gap-4 mb-6">
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Họ và tên *</label>
+            <input type="text" name="name" required placeholder="Nguyễn Văn A"
+                   class="w-full border-2 border-gray-200 focus:border-accent rounded-xl px-4 py-3 outline-none transition text-sm">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Số điện thoại *</label>
+            <input type="tel" name="phone" required placeholder="0879 888 898"
+                   class="w-full border-2 border-gray-200 focus:border-accent rounded-xl px-4 py-3 outline-none transition text-sm">
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Địa chỉ giao hàng *</label>
+            <input type="text" name="address" required placeholder="Số nhà, đường, quận/huyện, tỉnh/thành"
+                   class="w-full border-2 border-gray-200 focus:border-accent rounded-xl px-4 py-3 outline-none transition text-sm">
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Ghi chú (Rosé: tên người nhận, lời chúc)</label>
+            <textarea name="note" rows="2" placeholder="VD: Thiệp ghi 'Chúc em khỏe mạnh, yêu em' — Tên người nhận: Nguyễn Thị B"
+                      class="w-full border-2 border-gray-200 focus:border-accent rounded-xl px-4 py-3 outline-none transition text-sm resize-none"></textarea>
+          </div>
+        </div>
+
+        <!-- Payment Method -->
+        <div class="mb-6">
+          <label class="block font-bold text-gray-900 mb-3">Phương thức thanh toán</label>
+          <div class="grid grid-cols-2 gap-3">
+            <label class="cursor-pointer">
+              <input type="radio" name="payment" value="cod" class="peer sr-only" checked>
+              <div class="peer-checked:border-accent peer-checked:bg-blue-50 border-2 border-gray-200 rounded-2xl p-3 hover:border-accent transition flex flex-col items-center gap-2 h-full text-center">
+                <div class="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center text-xl flex-shrink-0">🚚</div>
+                <div>
+                  <p class="font-bold text-sm text-gray-900">COD</p>
+                  <p class="text-xs text-gray-500 leading-snug">Trả khi nhận hàng</p>
+                </div>
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="payment" value="bank" class="peer sr-only">
+              <div class="peer-checked:border-accent peer-checked:bg-blue-50 border-2 border-gray-200 rounded-2xl p-3 hover:border-accent transition flex flex-col items-center gap-2 h-full text-center">
+                <div class="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center text-xl flex-shrink-0">🏦</div>
+                <div>
+                  <p class="font-bold text-sm text-gray-900">Chuyển khoản</p>
+                  <p class="text-xs text-gray-500 leading-snug">VietQR · MBBank</p>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- VietQR inline panel — visible when "Chuyển khoản" is selected -->
+        <div id="qr-panel" class="hidden mb-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-5 border-2 border-blue-200">
+          <div class="flex flex-col sm:flex-row gap-5 items-center">
+            <div class="flex-shrink-0 text-center">
+              <img id="qr-inline-img" src="" alt="VietQR"
+                   class="w-44 h-44 rounded-xl shadow-lg border-4 border-white mx-auto">
+              <p class="text-xs text-gray-500 mt-2">Quét bằng app ngân hàng bất kỳ</p>
+            </div>
+            <div class="flex-1 text-sm space-y-1.5">
+              <p class="font-extrabold text-gray-900 text-base mb-2">Chi tiết chuyển khoản</p>
+              <div class="flex justify-between py-1 border-b border-blue-100">
+                <span class="text-gray-500">Ngân hàng</span>
+                <span class="font-semibold text-gray-900" id="qr-bank-display">MBBank</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-blue-100">
+                <span class="text-gray-500">Số tài khoản</span>
+                <span class="font-semibold font-mono text-gray-900" id="qr-acc-display">8616968888686</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-blue-100">
+                <span class="text-gray-500">Chủ TK</span>
+                <span class="font-semibold text-gray-900" id="qr-name-display">NGUYEN ANH TUAN</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-blue-100">
+                <span class="text-gray-500">Số tiền</span>
+                <span class="font-extrabold text-accent text-base" id="qr-amount-display">2.790.000đ</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span class="text-gray-500">Nội dung CK</span>
+                <span class="font-bold text-blue-700 font-mono" id="qr-desc-display">EYERIS3-DEN</span>
+              </div>
+              <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-3 text-xs text-yellow-800 mt-2">
+                ⚠️ Nhập đúng nội dung chuyển khoản để hệ thống xác nhận đơn tự động
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order Total Display -->
+        <div class="bg-white rounded-2xl p-4 mb-6 border border-gray-200">
+          <div class="flex justify-between text-sm text-gray-600 mb-2">
+            <span>Sản phẩm đã chọn</span>
+            <span id="selected-product-name">Eyeris 3 Đen</span>
+          </div>
+          <div class="flex justify-between text-sm text-gray-600 mb-2">
+            <span>Phí vận chuyển</span>
+            <span class="text-green-600 font-semibold">Miễn phí</span>
+          </div>
+          <div class="flex justify-between font-extrabold text-lg border-t border-gray-200 pt-3 mt-2">
+            <span>Tổng thanh toán</span>
+            <span id="order-total" class="text-accent">2.790.000đ</span>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit"
+                class="w-full bg-accent hover:bg-ctahover text-white font-extrabold py-5 rounded-2xl text-xl transition shadow-xl hover:shadow-2xl">
+          Đặt Hàng Ngay — Giao Hàng 2–4 Ngày
+        </button>
+        <p class="text-center text-xs text-gray-500 mt-3">
+          🔒 Thông tin của bạn được bảo mật hoàn toàn · Hoàn tiền 30 ngày nếu không hài lòng
+        </p>
+      </form>
+
+      <!-- Success Message (hidden by default) -->
+      <div id="order-success" class="hidden text-center py-10">
+        <div class="text-6xl mb-4">🎉</div>
+        <h3 class="text-2xl font-extrabold text-gray-900 mb-2">Đặt hàng thành công!</h3>
+        <p class="text-gray-600">Chúng tôi sẽ liên hệ với anh/chị trong vòng <strong>30 phút</strong> để xác nhận đơn hàng.</p>
+        <p class="text-gray-500 text-sm mt-2">Cảm ơn anh/chị đã tin tưởng chọn RENPHO Eyeris 3!</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+  FAQ
+════════════════════════════════════════════════ -->
+<section id="faq" class="py-16 bg-gray-50">
+  <div class="max-w-3xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <p class="text-accent font-semibold text-sm uppercase tracking-widest mb-3">FAQ</p>
+      <h2 class="text-3xl font-extrabold text-gray-900">Câu hỏi thường gặp</h2>
+    </div>
+
+    <div class="space-y-3" id="faq-list">
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <button onclick="toggleAcc(this)" class="w-full text-left px-6 py-5 font-semibold text-gray-900 flex justify-between items-center">
+          Máy có sử dụng được với giọng Việt không?
+          <span class="text-accent text-xl transition-transform">+</span>
+        </button>
+        <div class="acc-body px-6 text-gray-700 text-sm leading-relaxed">
+          <div class="pb-5">
+            Voice control của Eyeris 3 nhận lệnh bằng tiếng Anh ("Hi Eyeris", "Start", "Heat on"...).
+            Chúng tôi cung cấp <strong>bảng phát âm tiếng Việt</strong> trong bonus giúp bạn phát âm đúng để máy nhận lệnh.
+            Nói chậm và rõ, máy nhận được trong vòng 1–2 tuần quen. Hoặc bạn có thể dùng nút cảm ứng trên thân máy bình thường.
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <button onclick="toggleAcc(this)" class="w-full text-left px-6 py-5 font-semibold text-gray-900 flex justify-between items-center">
+          Hàng xách tay có bảo hành không?
+          <span class="text-accent text-xl transition-transform">+</span>
+        </button>
+        <div class="acc-body px-6 text-gray-700 text-sm leading-relaxed">
+          <div class="pb-5">
+            Có. Chúng tôi cung cấp <strong>bảo hành 24 tháng</strong> (50 đơn đầu): 12 tháng theo hãng RENPHO +
+            12 tháng bổ sung từ seller. Nếu máy lỗi phần cứng trong 12 tháng đầu, chúng tôi đổi máy mới.
+            Bảo hành kích hoạt từ ngày nhận hàng, có hóa đơn điện tử.
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <button onclick="toggleAcc(this)" class="w-full text-left px-6 py-5 font-semibold text-gray-900 flex justify-between items-center">
+          Sự khác biệt giữa Eyeris 3 Đen và Rosé là gì?
+          <span class="text-accent text-xl transition-transform">+</span>
+        </button>
+        <div class="acc-body px-6 text-gray-700 text-sm leading-relaxed">
+          <div class="pb-5">
+            <strong>Công nghệ lõi:</strong> Giống nhau (voice control, 3 chế độ nén, Bluetooth).<br><br>
+            <strong>Khác biệt:</strong> Rosé có màu Blush Gold &amp; Sunset độc quyền (limited edition),
+            nhiệt tối đa cao hơn (48°C vs 45°C), và đi kèm hộp quà premium + thiệp viết tay.
+            Rosé được thiết kế để tặng quà, không nhập thêm sau khi hết lô này.
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <button onclick="toggleAcc(this)" class="w-full text-left px-6 py-5 font-semibold text-gray-900 flex justify-between items-center">
+          Chính sách hoàn tiền như thế nào?
+          <span class="text-accent text-xl transition-transform">+</span>
+        </button>
+        <div class="acc-body px-6 text-gray-700 text-sm leading-relaxed">
+          <div class="pb-5">
+            <strong>30 ngày hoàn tiền 100%</strong> không hỏi lý do. Điều kiện: gửi ảnh/video mô tả tình trạng,
+            gửi máy về (phí vận chuyển do buyer trả nếu không phải lỗi của seller).
+            Tất cả tài liệu bonus (PDF, video) bạn giữ lại hoàn toàn.
+            Hoàn tiền trong 3–5 ngày làm việc qua chuyển khoản.
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <button onclick="toggleAcc(this)" class="w-full text-left px-6 py-5 font-semibold text-gray-900 flex justify-between items-center">
+          Giao hàng mất bao lâu? Có freeship không?
+          <span class="text-accent text-xl transition-transform">+</span>
+        </button>
+        <div class="acc-body px-6 text-gray-700 text-sm leading-relaxed">
+          <div class="pb-5">
+            Giao hàng toàn quốc qua GHN/GHTK, thời gian: <strong>2–4 ngày làm việc</strong>
+            (TP.HCM và Hà Nội: 1–2 ngày, tỉnh xa: 3–4 ngày).
+            Freeship tất cả đơn hàng từ 500.000đ (áp dụng cho tất cả sản phẩm).
+            COD có thể chọn — trả tiền khi nhận hàng.
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+        <button onclick="toggleAcc(this)" class="w-full text-left px-6 py-5 font-semibold text-gray-900 flex justify-between items-center">
+          Ai phù hợp để dùng Eyeris 3?
+          <span class="text-accent text-xl transition-transform">+</span>
+        </button>
+        <div class="acc-body px-6 text-gray-700 text-sm leading-relaxed">
+          <div class="pb-5">
+            Phù hợp với: nhân viên văn phòng, lập trình viên, designer, học sinh/sinh viên học nhiều,
+            người thường xuyên đau đầu/migraine, người có thâm quầng mắt, và bất kỳ ai dùng màn hình
+            trên 6 tiếng/ngày.<br><br>
+            Không phù hợp: người mắc bệnh về mắt nghiêm trọng (hãy hỏi bác sĩ trước).
+            Khuyến nghị: sử dụng 1–2 lần/ngày, mỗi lần 15 phút.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+  FINAL CTA
+════════════════════════════════════════════════ -->
+<section class="py-16 bg-primary text-white">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
+      Đôi mắt của bạn chờ đủ lâu rồi
+    </h2>
+    <p class="text-blue-200 text-lg mb-8 leading-relaxed">
+      Chỉ 15 phút mỗi tối — đôi mắt hoàn toàn thư giãn, sẵn sàng cho ngày mai.
+      Lô đầu tiên từ Mỹ. Hết là hết.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#order" onclick="goToOrder('black'); return false;"
+         class="bg-accent hover:bg-ctahover text-white font-bold py-4 px-8 rounded-xl text-lg transition shadow-lg">
+        🔥 Đặt Eyeris 3 Đen — 2.790.000đ
+      </a>
+      <a href="#order" onclick="goToOrder('rose'); return false;"
+         class="text-white font-bold py-4 px-8 rounded-xl text-lg transition shadow-lg border-2 border-rose-400"
+         style="background: linear-gradient(135deg, rgba(194,151,90,0.3), rgba(225,29,72,0.3))">
+        🔥 Đặt Eyeris 3 Rosé — 2.990.000đ
+      </a>
+    </div>
+    <p class="text-blue-300 text-sm mt-6">
+      🔒 Hoàn tiền 30 ngày · 🛡️ Bảo hành 24 tháng · 🚚 Freeship toàn quốc
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+  FOOTER
+════════════════════════════════════════════════ -->
+<footer class="bg-gray-900 text-gray-400 py-10 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-4 gap-8 mb-8">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center text-white font-bold text-sm">R</div>
+          <span class="font-bold text-white">RENPHO VN</span>
+        </div>
+        <p class="text-sm leading-relaxed">Nhà phân phối máy massage mắt RENPHO tại Việt Nam. Hàng Mỹ chính hãng, hỗ trợ tiếng Việt.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Sản phẩm</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" onclick="switchProduct('black'); return false;" class="hover:text-white transition">Eyeris 3 Đen</a></li>
+          <li><a href="#" onclick="switchProduct('rose'); return false;" class="hover:text-white transition">Eyeris 3 Rosé</a></li>
+          <li><a href="#comparison" class="hover:text-white transition">So sánh sản phẩm</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Hỗ trợ</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+          <li><a href="#order" class="hover:text-white transition">Đặt hàng</a></li>
+          <li><a href="tel:+840879888898" class="hover:text-white transition">Hotline: 0879 888 898</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Chính sách</h4>
+        <ul class="space-y-2 text-sm">
+          <li><span>Bảo hành 24 tháng</span></li>
+          <li><span>Hoàn tiền 30 ngày</span></li>
+          <li><span>Freeship từ 500K</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm">
+      <p>&copy; 2026 RENPHO VN. Sản phẩm được nhập khẩu chính hãng từ Mỹ.</p>
+      <div class="flex items-center gap-4">
+        <span>🇻🇳 Hỗ trợ tiếng Việt</span>
+        <span>·</span>
+        <span>📦 Giao toàn quốc</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════
+  STICKY MOBILE CTA
+════════════════════════════════════════════════ -->
+<div class="sticky-cta bg-white border-t border-gray-200 shadow-2xl px-4 py-3">
+  <div class="flex gap-3">
+    <a href="tel:+840879888898"
+       class="flex-none border-2 border-accent text-accent font-bold py-3 px-4 rounded-xl text-sm transition">
+      📞 Gọi ngay
+    </a>
+    <a href="#order"
+       class="flex-1 bg-accent hover:bg-ctahover text-white font-bold py-3 rounded-xl text-center text-sm transition shadow-md">
+      🔥 Flash Sale — Từ 2.790.000đ
+    </a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+  PAYMENT MODAL
+════════════════════════════════════════════════ -->
+<div id="payment-modal" class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4"
+     onclick="if(event.target===this)hidePaymentModal()">
+  <div class="bg-white rounded-3xl p-6 max-w-md w-full relative shadow-2xl animate-[fadeUp_0.3s_ease]">
+    <button onclick="hidePaymentModal()"
+            class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 font-bold text-xl leading-none">×</button>
+
+    <div class="text-center mb-5">
+      <div class="text-4xl mb-2">🏦</div>
+      <h3 class="text-xl font-extrabold text-gray-900">Thanh Toán VietQR</h3>
+      <p class="text-sm text-gray-500 mt-1">Quét mã QR để chuyển khoản ngay</p>
+    </div>
+
+    <div class="flex justify-center mb-5">
+      <img id="qr-modal-img" src="" alt="VietQR Payment"
+           class="w-56 h-56 rounded-2xl shadow-xl border-4 border-white outline outline-2 outline-blue-100">
+    </div>
+
+    <div class="bg-gray-50 rounded-2xl p-4 text-sm space-y-2 mb-4">
+      <div class="flex justify-between">
+        <span class="text-gray-500">Ngân hàng</span>
+        <span class="font-bold text-gray-900" id="modal-bank">MBBank</span>
+      </div>
+      <div class="flex justify-between">
+        <span class="text-gray-500">Số tài khoản</span>
+        <span class="font-bold font-mono text-gray-900" id="modal-acc">8616968888686</span>
+      </div>
+      <div class="flex justify-between">
+        <span class="text-gray-500">Chủ tài khoản</span>
+        <span class="font-bold text-gray-900" id="modal-name">NGUYEN ANH TUAN</span>
+      </div>
+      <div class="flex justify-between border-t border-gray-200 pt-2 mt-1">
+        <span class="text-gray-500">Số tiền</span>
+        <span class="font-extrabold text-accent text-lg" id="modal-amount">2.790.000đ</span>
+      </div>
+      <div class="flex justify-between">
+        <span class="text-gray-500">Nội dung CK</span>
+        <span class="font-bold font-mono text-blue-700" id="modal-desc">EYERIS3-DEN</span>
+      </div>
+    </div>
+
+    <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-3 text-xs text-yellow-800 mb-5">
+      ⚠️ Nhập <strong>đúng nội dung chuyển khoản</strong> để hệ thống xác nhận tự động.
+      Sau khi chuyển, chúng tôi sẽ liên hệ trong <strong>30 phút</strong>.
+    </div>
+
+    <button onclick="confirmBankPayment()"
+            class="w-full bg-accent hover:bg-ctahover text-white font-extrabold py-4 rounded-2xl text-base transition shadow-md mb-2">
+      ✅ Tôi Đã Chuyển Khoản — Xác Nhận Đơn
+    </button>
+    <button onclick="hidePaymentModal()"
+            class="w-full bg-gray-100 hover:bg-gray-200 text-gray-600 font-semibold py-3 rounded-xl text-sm transition">
+      Đóng — Chuyển khoản sau
+    </button>
+  </div>
+</div>
+
+<!-- Purchase toast -->
+<div id="purchase-toast" class="purchase-toast">
+  <div class="bg-white rounded-2xl shadow-2xl border border-gray-100 p-3 flex items-center gap-3">
+    <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 text-lg">🛍️</div>
+    <div class="min-w-0">
+      <p class="font-bold text-gray-900 text-sm" id="toast-name">Nguyễn T.</p>
+      <p class="text-xs text-gray-500 truncate" id="toast-action">vừa đặt Eyeris 3 Đen · 2 phút trước</p>
+    </div>
+    <div class="flex-shrink-0 w-2 h-2 rounded-full bg-green-400"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+  JAVASCRIPT
+════════════════════════════════════════════════ -->
+<script>
+  // ── Black image gallery ──
+  function switchBlackImg(num) {
+    const base = 'https://renpho.com/cdn/shop/files/G010V-BK_0' + num + '.png?v=1767694781&width=800';
+    const mainImg = document.getElementById('black-main-img');
+    mainImg.style.opacity = '0';
+    setTimeout(() => { mainImg.src = base; mainImg.style.opacity = '1'; }, 200);
+    [1,2,3].forEach(i => {
+      const btn = document.getElementById('black-thumb-' + i);
+      btn.className = btn.className.replace('border-accent','border-transparent');
+    });
+    const active = document.getElementById('black-thumb-' + num);
+    active.className = active.className.replace('border-transparent','border-accent');
+  }
+
+  // ── Rosé image gallery ──
+  function switchRoseImg(num) {
+    const base = 'https://renpho.com/cdn/shop/files/G010V-RS_0' + num + '.png?v=1767694781&width=800';
+    const mainImg = document.getElementById('rose-main-img');
+    mainImg.style.opacity = '0';
+    setTimeout(() => { mainImg.src = base; mainImg.style.opacity = '1'; }, 200);
+    [1,2,3].forEach(i => {
+      const btn = document.getElementById('rose-thumb-' + i);
+      btn.className = btn.className.replace('border-rose-500','border-transparent');
+    });
+    const active = document.getElementById('rose-thumb-' + num);
+    active.className = active.className.replace('border-transparent','border-rose-500');
+  }
+
+  // ── Product switcher ──
+  function switchProduct(variant) {
+    const panels = document.querySelectorAll('.product-panel');
+    const btnBlack = document.getElementById('btn-black');
+    const btnRose  = document.getElementById('btn-rose');
+
+    panels.forEach(p => p.classList.remove('active'));
+    document.getElementById('panel-' + variant).classList.add('active');
+
+    btnBlack.className = 'switcher-btn px-6 py-3 rounded-xl font-semibold text-sm text-gray-600';
+    btnRose.className  = 'switcher-btn px-6 py-3 rounded-xl font-semibold text-sm text-gray-600';
+
+    if (variant === 'black') {
+      btnBlack.className = 'switcher-btn active-black px-6 py-3 rounded-xl font-semibold text-sm';
+    } else {
+      btnRose.className  = 'switcher-btn active-rose px-6 py-3 rounded-xl font-semibold text-sm';
+    }
+  }
+
+  // ── FAQ Accordion ──
+  function toggleAcc(btn) {
+    const body = btn.nextElementSibling;
+    const icon = btn.querySelector('span:last-child');
+    const isOpen = body.classList.contains('open');
+
+    document.querySelectorAll('.acc-body').forEach(b => b.classList.remove('open'));
+    document.querySelectorAll('#faq-list button span:last-child').forEach(i => {
+      i.textContent = '+'; i.style.transform = '';
+    });
+
+    if (!isOpen) {
+      body.classList.add('open');
+      icon.textContent = '−';
+    }
+  }
+
+  // ── SePay VietQR Config — thay bằng thông tin ngân hàng thực ──
+  const SEPAY = {
+    account: '8616968888686',
+    bank:    'MBBank',
+    name:    'NGUYEN ANH TUAN',
+  };
+
+  // Product → QR data mapping
+  const qrData = {
+    black: { amount: 2790000, amountFmt: '2.790.000đ', desc: 'EYERIS3-DEN',   color: 'text-accent' },
+    rose:  { amount: 2990000, amountFmt: '2.990.000đ', desc: 'EYERIS3-ROSE',  color: 'text-rose-600' },
+    combo: { amount: 4990000, amountFmt: '4.990.000đ', desc: 'EYERIS3-COMBO', color: 'text-yellow-600' },
+  };
+
+  function buildQRUrl(product) {
+    const d = qrData[product];
+    return `https://qr.sepay.vn/img?acc=${SEPAY.account}&bank=${SEPAY.bank}&amount=${d.amount}&des=${d.desc}&template=compact`;
+  }
+
+  // ── Order form logic ──
+  const prices = {
+    black: { label: 'Eyeris 3 Đen — Complete Kit',       price: '2.790.000đ', color: 'text-accent' },
+    rose:  { label: 'Eyeris 3 Rosé — Gift Edition',      price: '2.990.000đ', color: 'text-rose-600' },
+    combo: { label: 'Combo Đen + Rosé (tiết kiệm 790K)', price: '4.990.000đ', color: 'text-yellow-600' },
+  };
+
+  function refreshQR() {
+    const product = document.querySelector('input[name="product"]:checked')?.value || 'black';
+    const d = qrData[product];
+    const url = buildQRUrl(product);
+    // update inline panel
+    ['qr-inline-img','qr-modal-img'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.src = url;
+    });
+    // update inline text fields
+    const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+    setText('qr-amount-display', d.amountFmt);
+    setText('qr-desc-display',   d.desc);
+    setText('qr-bank-display',   SEPAY.bank);
+    setText('qr-acc-display',    SEPAY.account);
+    setText('qr-name-display',   SEPAY.name);
+    // update modal text fields
+    setText('modal-amount', d.amountFmt);
+    setText('modal-desc',   d.desc);
+    setText('modal-bank',   SEPAY.bank);
+    setText('modal-acc',    SEPAY.account);
+    setText('modal-name',   SEPAY.name);
+  }
+
+  function toggleQRPanel() {
+    const method  = document.querySelector('input[name="payment"]:checked')?.value;
+    const qrPanel = document.getElementById('qr-panel');
+    if (qrPanel) qrPanel.classList.toggle('hidden', method !== 'bank');
+    if (method === 'bank') refreshQR();
+  }
+
+  document.querySelectorAll('input[name="product"]').forEach(radio => {
+    radio.addEventListener('change', () => { updateOrderTotal(); if (document.querySelector('input[name="payment"]:checked')?.value === 'bank') refreshQR(); });
+  });
+
+  document.querySelectorAll('input[name="payment"]').forEach(radio => {
+    radio.addEventListener('change', toggleQRPanel);
+  });
+
+  function updateOrderTotal() {
+    const product = document.querySelector('input[name="product"]:checked').value;
+    const nameEl  = document.getElementById('selected-product-name');
+    const totalEl = document.getElementById('order-total');
+    nameEl.textContent  = prices[product].label;
+    totalEl.textContent = prices[product].price;
+    totalEl.className   = prices[product].color + ' font-extrabold';
+  }
+
+  function submitOrder(e) {
+    e.preventDefault();
+    const method = document.querySelector('input[name="payment"]:checked')?.value;
+
+    if (method === 'bank') {
+      refreshQR();
+      document.getElementById('payment-modal').classList.remove('hidden');
+    } else {
+      // COD — show success directly
+      document.getElementById('order-form').classList.add('hidden');
+      document.getElementById('order-success').classList.remove('hidden');
+      window.scrollTo({ top: document.getElementById('order').offsetTop - 80, behavior: 'smooth' });
+    }
+  }
+
+  function navTo(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function goToOrder(product) {
+    if (product) {
+      const radio = document.querySelector(`input[name="product"][value="${product}"]`);
+      if (radio) { radio.checked = true; updateOrderTotal(); toggleQRPanel(); }
+    }
+    document.getElementById('order').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function hidePaymentModal() {
+    document.getElementById('payment-modal').classList.add('hidden');
+  }
+
+  function confirmBankPayment() {
+    hidePaymentModal();
+    document.getElementById('order-form').classList.add('hidden');
+    document.getElementById('order-success').classList.remove('hidden');
+    window.scrollTo({ top: document.getElementById('order').offsetTop - 80, behavior: 'smooth' });
+  }
+
+  // ── Unified countdown (midnight deadline) ──
+  (function() {
+    const midnight = new Date();
+    midnight.setHours(23, 59, 59, 0);
+    const end = midnight.getTime();
+
+    function tick() {
+      const diff = Math.max(0, end - Date.now());
+      const h = String(Math.floor(diff / 3600000)).padStart(2,'0');
+      const m = String(Math.floor((diff % 3600000) / 60000)).padStart(2,'0');
+      const s = String(Math.floor((diff % 60000) / 1000)).padStart(2,'0');
+      const hms = `${h}:${m}:${s}`;
+      // small inline displays (announcement bar, price boxes)
+      document.querySelectorAll('.countdown-display').forEach(el => el.textContent = hms);
+      // large urgency section
+      document.querySelectorAll('.urgency-h').forEach(el => el.textContent = h);
+      document.querySelectorAll('.urgency-m').forEach(el => el.textContent = m);
+      document.querySelectorAll('.urgency-s').forEach(el => el.textContent = s);
+      // pulse red when under 1 hour
+      if (diff < 3600000) {
+        document.querySelectorAll('.count-box').forEach(b => b.style.background = 'rgba(220,38,38,0.3)');
+      }
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+
+  // ── Toast notifications ──
+  (function() {
+    const orders = [
+      { name: 'Nguyễn Thị H.', action: 'vừa đặt Eyeris 3 Đen', ago: '1 phút trước' },
+      { name: 'Trần Văn M.',   action: 'vừa đặt Combo Đen + Rosé', ago: '3 phút trước' },
+      { name: 'Lê Thị B.',     action: 'vừa đặt Eyeris 3 Rosé', ago: '6 phút trước' },
+      { name: 'Phạm Quốc A.',  action: 'vừa đặt Eyeris 3 Đen', ago: '9 phút trước' },
+      { name: 'Võ Minh T.',    action: 'vừa đặt Combo Đen + Rosé', ago: '12 phút trước' },
+      { name: 'Huỳnh Thị K.',  action: 'vừa đặt Eyeris 3 Rosé', ago: '15 phút trước' },
+      { name: 'Đặng Hải N.',   action: 'vừa đặt Eyeris 3 Đen', ago: '18 phút trước' },
+    ];
+    let idx = 0;
+    const toast = document.getElementById('purchase-toast');
+    const nameEl = document.getElementById('toast-name');
+    const actionEl = document.getElementById('toast-action');
+
+    function show() {
+      const d = orders[idx++ % orders.length];
+      nameEl.textContent   = d.name;
+      actionEl.textContent = d.action + ' · ' + d.ago;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 4500);
+    }
+    setTimeout(() => { show(); setInterval(show, 20000); }, 6000);
+  })();
+
+  // ── Viewer count random drift ──
+  (function() {
+    let v = 18;
+    function drift() {
+      v += Math.random() > 0.5 ? 1 : -1;
+      v = Math.max(12, Math.min(28, v));
+      const el = document.getElementById('viewer-count');
+      if (el) el.textContent = v;
+    }
+    setInterval(drift, 7000);
+  })();
+
+  // ── Scroll progress bar ──
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    const pct = maxScroll > 0 ? (scrolled / maxScroll) * 100 : 0;
+    document.getElementById('progress-bar').style.width = pct + '%';
+  });
+
+  // ── Animate stock number (synced across all counters) ──
+  let stockNum = 23;
+  function syncStock() {
+    document.getElementById('stock-counter').textContent = stockNum;
+    const u = document.getElementById('urgency-stock-txt');
+    if (u) u.textContent = stockNum;
+  }
+  setInterval(() => {
+    if (stockNum > 15 && Math.random() > 0.97) {
+      stockNum = Math.max(15, stockNum - 1);
+      syncStock();
+    }
+  }, 8000);
+</script>
+
+<!-- ── Floating Chatbot Widget ── -->
+<style>
+  /* FAB button */
+  #chat-fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  #chat-tooltip {
+    background: #1e293b;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    animation: fadeInUp 0.4s ease;
+    cursor: pointer;
+  }
+  #chat-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(99,102,241,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+  }
+  #chat-btn:hover { transform: scale(1.08); box-shadow: 0 8px 30px rgba(99,102,241,0.7); }
+  #chat-btn .chat-ping {
+    position: absolute;
+    top: 3px; right: 3px;
+    width: 13px; height: 13px;
+    background: #22c55e;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    animation: ping 1.8s ease-in-out infinite;
+  }
+
+  /* Panel */
+  #chat-panel {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 390px;
+    height: min(620px, calc(100vh - 110px));
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 70px rgba(0,0,0,0.22);
+    display: none;
+    flex-direction: column;
+    z-index: 9998;
+    border: 1px solid rgba(0,0,0,0.08);
+    animation: slideUp 0.3s cubic-bezier(0.34,1.56,0.64,1);
+    background: #fff;
+  }
+  #chat-panel.open { display: flex; }
+
+  /* Header */
+  #chat-panel-header {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  #chat-panel-header .cp-avatar {
+    width: 42px; height: 42px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.22);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    border: 2px solid rgba(255,255,255,0.4);
+    flex-shrink: 0;
+  }
+  #chat-panel-header .cp-info { flex: 1; min-width: 0; }
+  #chat-panel-header .cp-info p {
+    color: #fff; font-weight: 700; font-size: 15px; margin: 0; line-height: 1.2;
+  }
+  #chat-panel-header .cp-info span {
+    color: rgba(255,255,255,0.85); font-size: 12px; display: flex; align-items: center; gap: 4px; margin-top: 2px;
+  }
+  #chat-panel-header .cp-close {
+    background: rgba(255,255,255,0.18);
+    border: none; cursor: pointer;
+    color: #fff; font-size: 16px;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s;
+    flex-shrink: 0;
+  }
+  #chat-panel-header .cp-close:hover { background: rgba(255,255,255,0.32); }
+
+  /* Body = greeting overlay + iframe stacked */
+  #chat-body {
+    flex: 1;
+    min-height: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  #chat-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    background: #f8fafc;
+  }
+
+  /* Greeting overlay — absolute, covers body */
+  #chat-greeting {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    background: linear-gradient(160deg, #f0f4ff 0%, #faf5ff 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 32px 24px;
+    opacity: 1;
+    transition: opacity 0.45s ease;
+  }
+  #chat-greeting.hidden { opacity: 0; pointer-events: none; }
+
+  .greet-avatar-wrap {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  .greet-avatar-emoji {
+    font-size: 64px;
+    display: block;
+    animation: bounceIn 0.55s cubic-bezier(0.34,1.56,0.64,1);
+    line-height: 1;
+  }
+  .greet-online-dot {
+    position: absolute;
+    bottom: 2px; right: 2px;
+    width: 16px; height: 16px;
+    background: #22c55e;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  .greet-name {
+    font-weight: 800;
+    font-size: 17px;
+    color: #1e293b;
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+  .greet-role {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 24px;
+  }
+  .greet-bubble {
+    background: #fff;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 20px 20px 20px 6px;
+    padding: 14px 18px;
+    font-size: 14.5px;
+    color: #334155;
+    line-height: 1.65;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 16px rgba(99,102,241,0.1);
+    min-height: 52px;
+  }
+  .greet-cursor {
+    display: inline-block;
+    animation: blink 0.65s step-end infinite;
+    color: #6366f1;
+    font-weight: 700;
+    margin-left: 1px;
+  }
+  .greet-dots {
+    display: flex;
+    gap: 5px;
+    margin-top: 12px;
+    justify-content: flex-start;
+    padding-left: 4px;
+  }
+  .greet-dots span {
+    width: 9px; height: 9px;
+    background: #a5b4fc;
+    border-radius: 50%;
+    animation: dotBounce 1.2s ease-in-out infinite;
+  }
+  .greet-dots span:nth-child(2) { animation-delay: 0.18s; }
+  .greet-dots span:nth-child(3) { animation-delay: 0.36s; }
+
+  /* Animations */
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(24px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes ping {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.5; transform: scale(1.35); }
+  }
+  @keyframes bounceIn {
+    0%   { transform: scale(0.4); opacity: 0; }
+    70%  { transform: scale(1.12); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+  }
+  @keyframes dotBounce {
+    0%, 60%, 100% { transform: translateY(0); }
+    30%            { transform: translateY(-7px); }
+  }
+
+  /* Mobile — full screen panel */
+  @media (max-width: 600px) {
+    #chat-panel {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      bottom: 0;
+      border-radius: 0;
+      max-height: 100vh;
+    }
+    #chat-panel-header {
+      padding: 10px 14px;
+    }
+    #chat-panel-header .cp-avatar {
+      width: 36px; height: 36px; font-size: 18px;
+    }
+    #chat-panel-header .cp-info p { font-size: 14px; }
+    #chat-fab { right: 14px; bottom: 14px; }
+    #chat-btn { width: 54px; height: 54px; font-size: 24px; }
+  }
+</style>
+
+<!-- Facebook Messenger Customer Chat Plugin -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({ xfbml: true, version: 'v22.0' });
+  };
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="fb-customerchat"
+  page_id="1133021153451708"
+  theme_color="#6366f1"
+  logged_in_greeting="Xin chào! Tôi có thể tư vấn gì cho Anh/Chị về máy massage mắt RENPHO Eyeris 3 không ạ?"
+  logged_out_greeting="Xin chào! Tôi có thể tư vấn gì cho Anh/Chị về máy massage mắt RENPHO Eyeris 3 không ạ?">
+</div>
+
+</body>
+</html>
